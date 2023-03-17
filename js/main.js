@@ -207,4 +207,8 @@ $(document).ready(function () {
       }
     });
   }
+
+  $(".other-head").click(function () {
+    $(this).toggleClass("active").siblings(".other-body").slideToggle();
+  });
 });
