@@ -2,8 +2,10 @@ $(document).ready(function () {
   sal({
     once: true,
   });
-  var scene = $("#scene").get(0);
-  var parallaxInstance = new Parallax(scene);
+  if ($("#scene").length > 0) {
+    var scene = $("#scene").get(0);
+    var parallaxInstance = new Parallax(scene);
+  }
   /************************************ Search ************************************/
   $(".search-icon").click(function () {
     $(".search-cont").slideToggle();
@@ -178,7 +180,7 @@ $(document).ready(function () {
   });
 
   /************************************ States Counter ************************************/
-  if ($("states-sec")) {
+  if ($(".states-sec").length > 0) {
     var a = 0;
     $(window).scroll(function () {
       if (
