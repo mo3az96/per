@@ -1,67 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114.237"
-    height="56.337" viewBox="0 0 114.237 56.337">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114.237" height="56.337" viewBox="0 0 114.237 56.337">
     <defs>
-        <filter id="Rectangle_17506" x="0" y="0" width="114.237" height="56.337"
-            filterUnits="userSpaceOnUse">
-            <feOffset dy="3" input="SourceAlpha" />
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feFlood flood-opacity="0.502" />
-            <feComposite operator="in" in2="blur" />
-            <feComposite in="SourceGraphic" />
-        </filter>
+      <filter id="Rectangle_17506" x="0" y="0" width="114.237" height="56.337" filterUnits="userSpaceOnUse">
+        <feOffset dy="3" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feFlood flood-opacity="0.502"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
     </defs>
-    <g id="Group_28854" data-name="Group 28854"
-        transform="matrix(0.999, 0.035, -0.035, 0.999, 9.339, -0.4)">
-        <g transform="matrix(1, -0.03, 0.03, 1, -9.32, 0.73)" filter="url(#Rectangle_17506)">
-            <path id="Rectangle_17506-2" data-name="Rectangle 17506"
-                d="M20,0H75.072a20,20,0,0,1,20,20V35.04a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V20A20,20,0,0,1,20,0Z"
-                transform="translate(9 9.32) rotate(-2)" fill="#ffc933" />
-        </g>
-        <g id="Group_27019" data-name="Group 27019"
-            transform="matrix(0.998, -0.07, 0.07, 0.998, 15.295, 13.146)">
-            <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
-                <g id="Group_5" data-name="Group 5">
-                    <g id="Group_2" data-name="Group 2" transform="translate(0 9.446)">
-                        <path id="Path_17" data-name="Path 17"
-                            d="M0,1.933A1.933,1.933,0,0,0,1.933,3.866C3,3.866,11.46,1.933,11.46,1.933S3,0,1.933,0A1.933,1.933,0,0,0,0,1.933Z"
-                            fill="#1d233d" />
-                    </g>
-                    <g id="Group_3" data-name="Group 3" transform="translate(3.309 13.83)">
-                        <path id="Path_18" data-name="Path 18"
-                            d="M.514,5.681A1.933,1.933,0,1,0,3.352,8.306C4.076,7.522,8.4,0,8.4,0S1.239,4.9.514,5.681Z"
-                            fill="#1d233d" />
-                    </g>
-                    <g id="Group_4" data-name="Group 4" transform="translate(3.309 0)">
-                        <path id="Path_19" data-name="Path 19"
-                            d="M.514,3.246A1.933,1.933,0,1,1,3.352.62C4.076,1.4,8.4,8.927,8.4,8.927S1.239,4.029.514,3.246Z"
-                            fill="#1d233d" />
-                    </g>
-                </g>
+    <g id="Group_28854" data-name="Group 28854" transform="matrix(0.999, 0.035, -0.035, 0.999, 9.339, -0.4)">
+      <g transform="matrix(1, -0.03, 0.03, 1, -9.32, 0.73)" filter="url(#Rectangle_17506)">
+        <path id="Rectangle_17506-2" data-name="Rectangle 17506" d="M20,0H75.072a20,20,0,0,1,20,20V35.04a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V20A20,20,0,0,1,20,0Z" transform="translate(9 9.32) rotate(-2)" fill="#ffc933"/>
+      </g>
+      <g id="Group_27019" data-name="Group 27019" transform="matrix(0.998, -0.07, 0.07, 0.998, 15.295, 13.146)">
+        <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+          <g id="Group_5" data-name="Group 5">
+            <g id="Group_2" data-name="Group 2" transform="translate(0 9.446)">
+              <path id="Path_17" data-name="Path 17" d="M0,1.933A1.933,1.933,0,0,0,1.933,3.866C3,3.866,11.46,1.933,11.46,1.933S3,0,1.933,0A1.933,1.933,0,0,0,0,1.933Z" fill="#1d233d"/>
             </g>
-            <g id="Group_11" data-name="Group 11" transform="translate(52.809 0.252)">
-                <g id="Group_10" data-name="Group 10">
-                    <g id="Group_7" data-name="Group 7" transform="translate(0.251 9.445)">
-                        <path id="Path_20" data-name="Path 20"
-                            d="M11.46,1.933A1.933,1.933,0,0,0,9.527,0C8.46,0,0,1.933,0,1.933S8.46,3.866,9.527,3.866A1.933,1.933,0,0,0,11.46,1.933Z"
-                            fill="#1d233d" />
-                    </g>
-                    <g id="Group_8" data-name="Group 8">
-                        <path id="Path_21" data-name="Path 21"
-                            d="M7.889,3.246A1.933,1.933,0,0,0,5.05.62C4.326,1.4,0,8.927,0,8.927S7.164,4.029,7.889,3.246Z"
-                            fill="#1d233d" />
-                    </g>
-                    <g id="Group_9" data-name="Group 9" transform="translate(0 13.83)">
-                        <path id="Path_22" data-name="Path 22"
-                            d="M7.889,5.681A1.933,1.933,0,0,1,5.05,8.306C4.326,7.522,0,0,0,0S7.164,4.9,7.889,5.681Z"
-                            fill="#1d233d" />
-                    </g>
-                </g>
+            <g id="Group_3" data-name="Group 3" transform="translate(3.309 13.83)">
+              <path id="Path_18" data-name="Path 18" d="M.514,5.681A1.933,1.933,0,1,0,3.352,8.306C4.076,7.522,8.4,0,8.4,0S1.239,4.9.514,5.681Z" fill="#1d233d"/>
             </g>
+            <g id="Group_4" data-name="Group 4" transform="translate(3.309 0)">
+              <path id="Path_19" data-name="Path 19" d="M.514,3.246A1.933,1.933,0,1,1,3.352.62C4.076,1.4,8.4,8.927,8.4,8.927S1.239,4.029.514,3.246Z" fill="#1d233d"/>
+            </g>
+          </g>
         </g>
-        <text id="Per" transform="matrix(0.998, -0.07, 0.07, 0.998, 48.341, 36.615)" fill="#fff"
-            font-size="39" font-family="BebasNeueBold, Bebas Neue">
-            <tspan x="-22.464" y="0">Per</tspan>
-        </text>
+        <g id="Group_11" data-name="Group 11" transform="translate(52.809 0.252)">
+          <g id="Group_10" data-name="Group 10">
+            <g id="Group_7" data-name="Group 7" transform="translate(0.251 9.445)">
+              <path id="Path_20" data-name="Path 20" d="M11.46,1.933A1.933,1.933,0,0,0,9.527,0C8.46,0,0,1.933,0,1.933S8.46,3.866,9.527,3.866A1.933,1.933,0,0,0,11.46,1.933Z" fill="#1d233d"/>
+            </g>
+            <g id="Group_8" data-name="Group 8">
+              <path id="Path_21" data-name="Path 21" d="M7.889,3.246A1.933,1.933,0,0,0,5.05.62C4.326,1.4,0,8.927,0,8.927S7.164,4.029,7.889,3.246Z" fill="#1d233d"/>
+            </g>
+            <g id="Group_9" data-name="Group 9" transform="translate(0 13.83)">
+              <path id="Path_22" data-name="Path 22" d="M7.889,5.681A1.933,1.933,0,0,1,5.05,8.306C4.326,7.522,0,0,0,0S7.164,4.9,7.889,5.681Z" fill="#1d233d"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <path id="Path_36655" data-name="Path 36655" d="M-14.586-27.3H-20.9V0h4.29V-10.257h2.028c4.29,0,6.4-2.379,6.4-6.747v-3.549C-8.19-24.921-10.3-27.3-14.586-27.3Zm0,3.9c1.365,0,2.106.624,2.106,2.574v4.1c0,1.95-.741,2.574-2.106,2.574h-2.028V-23.4Zm12.87,0h7.41v-3.9h-11.7V0h11.7V-3.9h-7.41v-8H4.173v-3.9H-1.716ZM21.684,0a8.04,8.04,0,0,1-.468-3.315V-7.527c0-2.847-.7-4.914-2.847-5.811,1.911-.9,2.808-2.73,2.808-5.538v-2.145c0-4.212-1.911-6.279-6.357-6.279H8.346V0h4.29V-11.115h1.482c1.95,0,2.808.936,2.808,3.471v4.29A8.4,8.4,0,0,0,17.316,0ZM14.7-23.4c1.521,0,2.184.858,2.184,2.808V-17.9c0,2.184-.975,2.886-2.574,2.886H12.636V-23.4Z" transform="matrix(0.998, -0.07, 0.07, 0.998, 48.341, 36.615)" fill="#fff"/>
     </g>
-</svg>
+  </svg>
   
