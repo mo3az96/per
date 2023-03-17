@@ -285,61 +285,47 @@
     <!-- Start Form -->
     <section class="log-sec">
       <div class="container">
-        <div class="log-cont">
-          <div class="log-form">
-            <h1 class="form-title">تسجيل الدخول</h1>
-            <h3 class="form-subtitle">
-              مع
-              <span>PER </span>
-              <span>FOLLOW</span>
-              ستحظي بالشعبية
-            </h3>
-            <form>
-              <div class="form-group">
-                <div class="input-cont">
-                  <div class="input-ico">
-                    <img src="images/form/mail.svg" />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="البريد الإلكتروني"
-                    class="custom-input"
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- add "has_error" class if error-->
-                <div class="input-cont">
-                  <div class="input-ico">
-                    <img src="images/form/password.svg" />
-                  </div>
-                  <span class="password-eye">
-                    <img src="images/form/eye.svg" />
-                  </span>
-                  <input
-                    type="password"
-                    placeholder="كلمة المرور"
-                    class="custom-input"
-                  />
-                </div>
-                <!-- <span class="error"> كلمة المرور خطأ </span> -->
-              </div>
-              <div class="forget">
-                <a href="forget.html" class="forget-link"> نسيت كلمة السر؟ </a>
-              </div>
-              <!-- <button class="submit-btn main-btn">تسجيل الدخول</button> -->
-              <a href="dashboard.html" class="submit-btn main-btn">
-                تسجيل الدخول
-              </a>
-            </form>
-            <div class="form-hint">
-              ليس لديك حساب؟
-              <a href="reg.html">سجل حساب جديد الان</a>
+        <div class="otp-cont">
+          <div class="otp-img">
+            <img src="images/otp.png" class="img-fluid" />
+          </div>
+          <h1 class="form-title">تحقق من البريد الإلكتروني</h1>
+          <h3 class="form-subtitle">
+            من فضلك ادخل الكود المرسل علي بريدك الإلكتروني
+          </h3>
+          <form class="otp-form">
+            <div class="otp-inputs">
+              <input
+                class="otp-field"
+                type="number"
+                maxlength="1"
+                placeholder="-"
+              />
+              <input
+                class="otp-field"
+                type="number"
+                maxlength="1"
+                placeholder="-"
+                disabled
+              />
+              <input
+                class="otp-field"
+                type="number"
+                maxlength="1"
+                placeholder="-"
+                disabled
+              />
+              <input
+                class="otp-field"
+                type="number"
+                maxlength="1"
+                placeholder="-"
+                disabled
+              />
             </div>
-          </div>
-          <div class="log-img" id="scene">
-            <img src="images/log.png" class="img-fluid" data-depth="0.5" />
-          </div>
+            <button class="submit-btn main-btn">تأكيد</button>
+            <a href="log.html" class="cancel-btn">إلغاء</a>
+          </form>
         </div>
       </div>
     </section>
@@ -434,5 +420,6 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/sal.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/otp.js"></script>
   </body>
 </html>

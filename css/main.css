@@ -1125,6 +1125,49 @@ html[dir=ltr] .password-eye ~ .custom-input {
   color: #ffaa00;
 }
 
+.cancel-btn {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 23px auto 0;
+  color: #1d233d;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.cancel-btn:hover {
+  color: #ffaa00;
+}
+
+.otp-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+  margin-bottom: 20px;
+}
+.otp-inputs .otp-field {
+  border: 1px solid #d9e0e5;
+  border-radius: 10px;
+  width: 54px;
+  height: 56px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1d233d;
+  transition: all 0.3s ease-in-out;
+}
+.otp-inputs .otp-field ~ .otp-field {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+.otp-inputs .otp-field:focus {
+  border-color: #ffaa00;
+}
+
 footer .curve {
   transform: scaleY(-1);
 }
@@ -1538,6 +1581,27 @@ header:after {
   .log-img {
     max-width: none;
   }
+}
+
+.otp-cont {
+  width: 482px;
+  margin: auto;
+  max-width: 100%;
+  padding: 7px 25px 21px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .otp-cont {
+    padding: 13px 20px 19px;
+  }
+}
+
+.otp-img {
+  margin: auto;
+  text-align: center;
 }
 
 .mobile-tools {
