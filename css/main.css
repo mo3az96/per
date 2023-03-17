@@ -421,31 +421,64 @@ main .curve img {
   margin: 0;
   flex-shrink: 0;
   transition: all 0.3s ease-in-out;
+  width: 57px;
 }
 .custom-slider .swiper-btn:after {
   display: none;
+}
+.custom-slider .swiper-btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.custom-slider .swiper-btn img.active {
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+.custom-slider .swiper-btn:hover img {
+  visibility: hidden;
+  opacity: 0;
+}
+.custom-slider .swiper-btn:hover img.active {
+  visibility: visible;
+  opacity: 1;
 }
 .custom-slider .swiper-btn.swiper-button-next {
   right: auto;
   left: -50px;
 }
+.custom-slider .swiper-btn.swiper-button-next .active {
+  transform: scaleX(-1);
+}
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-prev {
   right: auto;
   left: -50px;
+}
+.swiper-rtl .custom-slider .swiper-btn.swiper-button-prev .active {
+  transform: scaleX(-1);
 }
 .custom-slider .swiper-btn.swiper-button-prev {
   left: auto;
   right: -50px;
 }
+.custom-slider .swiper-btn.swiper-button-prev img:not(.active) {
+  transform: scaleX(-1);
+}
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-next {
   left: auto;
   right: -50px;
 }
+.swiper-rtl .custom-slider .swiper-btn.swiper-button-next img:not(.active) {
+  transform: scaleX(-1);
+}
 @media (max-width: 1300px) {
   .custom-slider .swiper-btn {
-    position: static;
-    inset: unset;
-    transform: none;
+    position: relative;
+    inset: unset !important;
+    transform: none !important;
   }
 }
 .custom-slider .swiper-pagination {
@@ -476,6 +509,7 @@ main .curve img {
 .custom-slider.service-slider .swiper-btn {
   transform: none;
   top: 77px;
+  width: 37px;
 }
 .custom-slider.service-slider .swiper-btn.swiper-button-next {
   right: auto;
@@ -525,6 +559,16 @@ main .curve img {
   .service-cont {
     padding: 20px 20px 30px;
     margin-bottom: 20px;
+  }
+}
+.service-cont .slide-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 19px;
+}
+@media (max-width: 991px) {
+  .service-cont .slide-cont {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1613,6 +1657,7 @@ header:after {
 .offers-sec {
   background-color: #fff;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .offers-sec {
@@ -1646,12 +1691,6 @@ header:after {
 @media (max-width: 767px) {
   .service-slider {
     padding: 0;
-  }
-  .service-slider .swiper {
-    height: 280px;
-  }
-  .service-slider .swiper .swiper-slide {
-    height: auto;
   }
 }
 
@@ -1723,6 +1762,7 @@ header:after {
 @media (max-width: 767px) {
   .log-img {
     max-width: none;
+    display: none;
   }
 }
 

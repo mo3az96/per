@@ -547,11 +547,13 @@
 
             <div class="slider-tools">
               <div class="swiper-button-prev swiper-btn">
-                <img src="images/arr-right.svg" alt="" />
+                <img src="images/arr-right.svg" class="active" />
+                <img src="images/arr-left.svg" />
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next swiper-btn">
-                <img src="images/arr-left.svg" alt="" />
+                <img src="images/arr-right.svg" class="active" />
+                <img src="images/arr-left.svg" />
               </div>
             </div>
           </div>
@@ -572,171 +574,321 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="64.898"
-                        height="45.424"
-                        viewBox="0 0 64.898 45.424"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="tiktok-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fe2c55" />
-                            <stop offset="1" stop-color="#54d9cf" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="Path_36620"
-                          data-name="Path 36620"
-                          d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
-                          transform="translate(-1.996 -4.996)"
-                          fill="url(#tiktok-gradient)"
-                        />
-                        <path
-                          id="Path_36621"
-                          data-name="Path 36621"
-                          d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
-                          transform="translate(12.596 2.866)"
-                          fill="url(#tiktok-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاهدات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#tiktok-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="67.86"
+                          height="52.735"
+                          viewBox="0 0 67.86 52.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-0.5 -3)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="55.002"
+                          height="50.842"
+                          viewBox="0 0 55.002 50.842"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.486 -2.25)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54.572"
+                          height="49.128"
+                          viewBox="0 0 54.572 49.128"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-1.5 -2.457)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="67.86"
-                        height="52.735"
-                        viewBox="0 0 67.86 52.735"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="tiktok-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fe2c55" />
-                            <stop offset="1" stop-color="#54d9cf" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="users_1_"
-                          data-name="users (1)"
-                          d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
-                          transform="translate(-0.5 -3)"
-                          stroke="rgba(0,0,0,0)"
-                          stroke-miterlimit="10"
-                          stroke-width="1"
-                          fill="url(#tiktok-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> متابعين </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="55.002"
-                        height="50.842"
-                        viewBox="0 0 55.002 50.842"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="tiktok-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fe2c55" />
-                            <stop offset="1" stop-color="#54d9cf" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="love_1_"
-                          data-name="love (1)"
-                          d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
-                          transform="translate(-1.486 -2.25)"
-                          stroke="rgba(0,0,0,0)"
-                          stroke-miterlimit="10"
-                          stroke-width="1"
-                          fill="url(#tiktok-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> لايكات </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="54.572"
-                        height="49.128"
-                        viewBox="0 0 54.572 49.128"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="tiktok-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fe2c55" />
-                            <stop offset="1" stop-color="#54d9cf" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="share_2_"
-                          data-name="share (2)"
-                          d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
-                          transform="translate(-1.5 -2.457)"
-                          stroke="rgba(0,0,0,0)"
-                          stroke-miterlimit="10"
-                          stroke-width="1"
-                          fill="url(#tiktok-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاركات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#tiktok-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="67.86"
+                          height="52.735"
+                          viewBox="0 0 67.86 52.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-0.5 -3)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="55.002"
+                          height="50.842"
+                          viewBox="0 0 55.002 50.842"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.486 -2.25)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54.572"
+                          height="49.128"
+                          viewBox="0 0 54.572 49.128"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="tiktok-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fe2c55" />
+                              <stop offset="1" stop-color="#54d9cf" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-1.5 -2.457)"
+                            stroke="rgba(0,0,0,0)"
+                            stroke-miterlimit="10"
+                            stroke-width="1"
+                            fill="url(#tiktok-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="slider-tools">
               <div class="swiper-button-prev swiper-btn">
-                <img src="images/arr-service-right.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next swiper-btn">
-                <img src="images/arr-service-left.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
             </div>
           </div>
@@ -755,162 +907,303 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="64.898"
-                        height="45.424"
-                        viewBox="0 0 64.898 45.424"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="facebook-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#1877f2" />
-                            <stop offset="1" stop-color="#99c2f8" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="Path_36620"
-                          data-name="Path 36620"
-                          d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
-                          transform="translate(-1.996 -4.996)"
-                          fill="url(#facebook-gradient)"
-                        />
-                        <path
-                          id="Path_36621"
-                          data-name="Path 36621"
-                          d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
-                          transform="translate(12.596 2.866)"
-                          fill="url(#facebook-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاهدات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#facebook-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="66.86"
+                          height="51.735"
+                          viewBox="0 0 66.86 51.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-1 -3.5)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54"
+                          height="49.831"
+                          viewBox="0 0 54 49.831"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.988 -2.761)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="53.38"
+                          height="48.042"
+                          viewBox="0 0 53.38 48.042"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-2 -3)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="66.86"
-                        height="51.735"
-                        viewBox="0 0 66.86 51.735"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="facebook-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#1877f2" />
-                            <stop offset="1" stop-color="#99c2f8" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="users_1_"
-                          data-name="users (1)"
-                          d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
-                          transform="translate(-1 -3.5)"
-                          fill="url(#facebook-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> متابعين </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="54"
-                        height="49.831"
-                        viewBox="0 0 54 49.831"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="facebook-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#1877f2" />
-                            <stop offset="1" stop-color="#99c2f8" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="love_1_"
-                          data-name="love (1)"
-                          d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
-                          transform="translate(-1.988 -2.761)"
-                          fill="url(#facebook-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> لايكات </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="53.38"
-                        height="48.042"
-                        viewBox="0 0 53.38 48.042"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="facebook-gradient"
-                            x1="1.065"
-                            y1="0.602"
-                            x2="0"
-                            y2="0.293"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#1877f2" />
-                            <stop offset="1" stop-color="#99c2f8" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="share_2_"
-                          data-name="share (2)"
-                          d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
-                          transform="translate(-2 -3)"
-                          fill="url(#facebook-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاركات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#facebook-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="66.86"
+                          height="51.735"
+                          viewBox="0 0 66.86 51.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-1 -3.5)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54"
+                          height="49.831"
+                          viewBox="0 0 54 49.831"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.988 -2.761)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="53.38"
+                          height="48.042"
+                          viewBox="0 0 53.38 48.042"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="facebook-gradient"
+                              x1="1.065"
+                              y1="0.602"
+                              x2="0"
+                              y2="0.293"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#1877f2" />
+                              <stop offset="1" stop-color="#99c2f8" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-2 -3)"
+                            fill="url(#facebook-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="slider-tools">
               <div class="swiper-button-prev swiper-btn">
-                <img src="images/arr-service-right.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next swiper-btn">
-                <img src="images/arr-service-left.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
             </div>
           </div>
@@ -929,170 +1222,319 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="64.898"
-                        height="45.424"
-                        viewBox="0 0 64.898 45.424"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="instagram-gradient"
-                            x1="0.835"
-                            y1="0.803"
-                            x2="0.151"
-                            y2="0.184"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fec053" />
-                            <stop offset="0.327" stop-color="#f2203e" />
-                            <stop offset="0.648" stop-color="#b729a8" />
-                            <stop offset="1" stop-color="#5342d6" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="Path_36620"
-                          data-name="Path 36620"
-                          d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
-                          transform="translate(-1.996 -4.996)"
-                          fill="url(#instagram-gradient)"
-                        />
-                        <path
-                          id="Path_36621"
-                          data-name="Path 36621"
-                          d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
-                          transform="translate(12.596 2.866)"
-                          fill="url(#instagram-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاهدات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#instagram-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="66.86"
+                          height="51.735"
+                          viewBox="0 0 66.86 51.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-1 -3.5)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54"
+                          height="49.831"
+                          viewBox="0 0 54 49.831"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.988 -2.761)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="53.38"
+                          height="48.042"
+                          viewBox="0 0 53.38 48.042"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-2 -3)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="66.86"
-                        height="51.735"
-                        viewBox="0 0 66.86 51.735"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="instagram-gradient"
-                            x1="0.835"
-                            y1="0.803"
-                            x2="0.151"
-                            y2="0.184"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fec053" />
-                            <stop offset="0.327" stop-color="#f2203e" />
-                            <stop offset="0.648" stop-color="#b729a8" />
-                            <stop offset="1" stop-color="#5342d6" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="users_1_"
-                          data-name="users (1)"
-                          d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
-                          transform="translate(-1 -3.5)"
-                          fill="url(#instagram-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> متابعين </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="54"
-                        height="49.831"
-                        viewBox="0 0 54 49.831"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="instagram-gradient"
-                            x1="0.835"
-                            y1="0.803"
-                            x2="0.151"
-                            y2="0.184"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fec053" />
-                            <stop offset="0.327" stop-color="#f2203e" />
-                            <stop offset="0.648" stop-color="#b729a8" />
-                            <stop offset="1" stop-color="#5342d6" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="love_1_"
-                          data-name="love (1)"
-                          d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
-                          transform="translate(-1.988 -2.761)"
-                          fill="url(#instagram-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> لايكات </span>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#!" class="service-item">
-                    <div class="service-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="53.38"
-                        height="48.042"
-                        viewBox="0 0 53.38 48.042"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="instagram-gradient"
-                            x1="0.835"
-                            y1="0.803"
-                            x2="0.151"
-                            y2="0.184"
-                            gradientUnits="objectBoundingBox"
-                          >
-                            <stop offset="0" stop-color="#fec053" />
-                            <stop offset="0.327" stop-color="#f2203e" />
-                            <stop offset="0.648" stop-color="#b729a8" />
-                            <stop offset="1" stop-color="#5342d6" />
-                          </linearGradient>
-                        </defs>
-                        <path
-                          id="share_2_"
-                          data-name="share (2)"
-                          d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
-                          transform="translate(-2 -3)"
-                          fill="url(#instagram-gradient)"
-                        />
-                      </svg>
-                    </div>
-                    <span class="serive-name"> مشاركات </span>
-                  </a>
+                  <div class="slide-cont">
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="64.898"
+                          height="45.424"
+                          viewBox="0 0 64.898 45.424"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="Path_36620"
+                            data-name="Path 36620"
+                            d="M66.459,26.093c-2.076-3.6-13.493-21.667-32.89-21.083C15.632,5.464,5.253,21.228,2.431,26.093a3.244,3.244,0,0,0,0,3.244C4.474,32.872,15.4,50.42,34.51,50.42h.811C53.258,49.966,63.67,34.2,66.459,29.337A3.244,3.244,0,0,0,66.459,26.093Zm-31.3,17.84c-13.98.324-23.094-11.645-25.949-16.218C12.453,22.493,20.919,11.821,33.893,11.5c13.915-.357,23.062,11.645,25.949,16.218C56.5,32.937,48.133,43.608,35.158,43.933Z"
+                            transform="translate(-1.996 -4.996)"
+                            fill="url(#instagram-gradient)"
+                          />
+                          <path
+                            id="Path_36621"
+                            data-name="Path 36621"
+                            d="M19.853,8.5A11.353,11.353,0,1,0,31.205,19.853,11.353,11.353,0,0,0,19.853,8.5Zm0,16.218a4.865,4.865,0,1,1,4.865-4.865A4.865,4.865,0,0,1,19.853,24.718Z"
+                            transform="translate(12.596 2.866)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاهدات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="66.86"
+                          height="51.735"
+                          viewBox="0 0 66.86 51.735"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="users_1_"
+                            data-name="users (1)"
+                            d="M35.388,30.037a14.973,14.973,0,0,0,5.173-11.321,15.216,15.216,0,1,0-30.432,0A14.973,14.973,0,0,0,15.3,30.037,24.346,24.346,0,0,0,1,52.191a3.043,3.043,0,1,0,6.086,0,18.259,18.259,0,0,1,36.519,0,3.043,3.043,0,1,0,6.086,0,24.346,24.346,0,0,0-14.3-22.155ZM25.346,27.846a9.13,9.13,0,1,1,9.13-9.13A9.13,9.13,0,0,1,25.346,27.846Zm29.641.974A15.216,15.216,0,0,0,43.605,3.5a3.043,3.043,0,0,0,0,6.086A9.114,9.114,0,0,1,48.17,26.6a3.039,3.039,0,0,0-.152,5.173l1.187.791.4.213A21.3,21.3,0,0,1,61.773,52.191a3.043,3.043,0,0,0,6.086,0A27.389,27.389,0,0,0,54.987,28.82Z"
+                            transform="translate(-1 -3.5)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> متابعين </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="54"
+                          height="49.831"
+                          viewBox="0 0 54 49.831"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="love_1_"
+                            data-name="love (1)"
+                            d="M51.028,7.751A16.921,16.921,0,0,0,29.007,6.105,16.921,16.921,0,0,0,6.986,31.688L27.091,51.793a2.7,2.7,0,0,0,3.832,0L51.028,31.688A16.921,16.921,0,0,0,51.028,7.751ZM47.223,27.883,29.007,46.072,10.791,27.883A11.5,11.5,0,1,1,26.983,11.556a2.7,2.7,0,0,0,3.832,0A11.523,11.523,0,0,1,47.007,27.883Z"
+                            transform="translate(-1.988 -2.761)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> لايكات </span>
+                    </a>
+                    <a href="#!" class="service-item">
+                      <div class="service-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="53.38"
+                          height="48.042"
+                          viewBox="0 0 53.38 48.042"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="instagram-gradient"
+                              x1="0.835"
+                              y1="0.803"
+                              x2="0.151"
+                              y2="0.184"
+                              gradientUnits="objectBoundingBox"
+                            >
+                              <stop offset="0" stop-color="#fec053" />
+                              <stop offset="0.327" stop-color="#f2203e" />
+                              <stop offset="0.648" stop-color="#b729a8" />
+                              <stop offset="1" stop-color="#5342d6" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            id="share_2_"
+                            data-name="share (2)"
+                            d="M54.6,25.134,33.246,3.782A2.669,2.669,0,0,0,28.69,5.669V15.13A29.4,29.4,0,0,0,2,44.37v4a2.669,2.669,0,0,0,4.762,1.655A30.576,30.576,0,0,1,27.812,39.221c.133-.016.467-.043.878-.069v9.222a2.669,2.669,0,0,0,4.556,1.887L54.6,28.908a2.669,2.669,0,0,0,0-3.774Zm-20.57,16.8V36.363a2.669,2.669,0,0,0-2.669-2.669c-.681,0-3.459.133-4.169.227A37.38,37.38,0,0,0,7.477,41.789a24.056,24.056,0,0,1,23.883-21.44,2.669,2.669,0,0,0,2.669-2.669V12.112L48.938,27.021Z"
+                            transform="translate(-2 -3)"
+                            fill="url(#instagram-gradient)"
+                          />
+                        </svg>
+                      </div>
+                      <span class="serive-name"> مشاركات </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="slider-tools">
               <div class="swiper-button-prev swiper-btn">
-                <img src="images/arr-service-right.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next swiper-btn">
-                <img src="images/arr-service-left.svg" alt="" />
+                <img src="images/arr-service-right.svg" class="active" />
+                <img src="images/arr-service-left.svg" />
               </div>
             </div>
           </div>
@@ -1708,11 +2150,13 @@
 
           <div class="slider-tools">
             <div class="swiper-button-prev swiper-btn">
-              <img src="images/arr-right.svg" alt="" />
+              <img src="images/arr-right.svg" class="active" />
+              <img src="images/arr-left.svg" />
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next swiper-btn">
-              <img src="images/arr-left.svg" alt="" />
+              <img src="images/arr-right.svg" class="active" />
+              <img src="images/arr-left.svg" />
             </div>
           </div>
         </div>

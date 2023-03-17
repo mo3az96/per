@@ -29,6 +29,9 @@ $(document).ready(function () {
       el: ".offers-slider .swiper-pagination",
       clickable: true,
     },
+    autoplay: {
+      delay: 3000,
+    },
     navigation: {
       nextEl: ".offers-slider .swiper-button-next",
       prevEl: ".offers-slider .swiper-button-prev",
@@ -53,6 +56,7 @@ $(document).ready(function () {
   /************************************ Tiktok Slider ************************************/
   var tiktokSwiper = new Swiper(".tiktok-slider .swiper", {
     loop: true,
+    slidesPerView: 1,
     spaceBetween: 19,
     pagination: {
       el: ".tiktok-slider .swiper-pagination",
@@ -62,28 +66,12 @@ $(document).ready(function () {
       nextEl: ".tiktok-slider .swiper-button-next",
       prevEl: ".tiktok-slider .swiper-button-prev",
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
-      },
-      767: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1199: {
-        slidesPerView: 4,
-      },
-    },
   });
 
   /************************************ Facebook Slider ************************************/
   var facebookSwiper = new Swiper(".facebook-slider .swiper", {
     loop: true,
+    slidesPerView: 1,
     spaceBetween: 19,
     pagination: {
       el: ".facebook-slider .swiper-pagination",
@@ -93,28 +81,12 @@ $(document).ready(function () {
       nextEl: ".facebook-slider .swiper-button-next",
       prevEl: ".facebook-slider .swiper-button-prev",
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
-      },
-      767: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1199: {
-        slidesPerView: 4,
-      },
-    },
   });
 
   /************************************ Instagram Slider ************************************/
   var instagramSwiper = new Swiper(".instagram-slider .swiper", {
     loop: true,
+    slidesPerView: 1,
     spaceBetween: 19,
     pagination: {
       el: ".instagram-slider .swiper-pagination",
@@ -123,23 +95,6 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".instagram-slider .swiper-button-next",
       prevEl: ".instagram-slider .swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
-      },
-      767: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1199: {
-        slidesPerView: 4,
-      },
     },
   });
 
