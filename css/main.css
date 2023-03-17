@@ -499,6 +499,11 @@ main .curve img {
   margin: 0 5px;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 767px) {
+  .custom-slider .swiper-pagination .swiper-pagination-bullet {
+    margin: 5px;
+  }
+}
 .custom-slider .swiper-pagination .swiper-pagination-bullet:hover {
   background-color: #ffaa00;
 }
@@ -542,6 +547,7 @@ main .curve img {
   .slider-tools .swiper-pagination {
     width: auto;
     margin: 0 12px;
+    flex-wrap: wrap;
   }
   .payments-slider .slider-tools .swiper-pagination {
     margin: 0 7px;
