@@ -167,8 +167,21 @@ $(document).ready(function () {
       }
     });
   }
-
+  /************************************ Other Services ************************************/
   $(".other-head").click(function () {
     $(this).toggleClass("active").siblings(".other-body").slideToggle();
+  });
+  /************************************ Filter ************************************/
+
+  $(".orders-filter").click(function () {
+    $(this).addClass("active");
+    $(".orders-filter").not(this).removeClass("active");
+    var filterId = $(this).data("id");
+    if (filterId == "all") {
+      $(".order-item").show();
+    } else {
+      $(".order-item").hide();
+      $(".order-item[data-filter=" + filterId + "]").show();
+    }
   });
 });

@@ -1985,6 +1985,12 @@ header:after {
 .dashboard-body {
   padding: 40px 0 35px;
   max-width: 100%;
+  min-height: 655px;
+}
+@media (max-width: 991px) {
+  .dashboard-body {
+    min-height: auto;
+  }
 }
 
 .dashboard-states {
@@ -2189,6 +2195,201 @@ header:after {
 }
 .dashboard-services .other-item .body-item svg {
   width: 20px;
+}
+
+.orders-cont {
+  padding: 30px 30px 23px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  background-color: #fff;
+}
+@media (max-width: 991px) {
+  .orders-cont {
+    padding: 26px 0 30px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #f1f5f9;
+  }
+}
+
+.order-filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 29px;
+}
+@media (max-width: 991px) {
+  .order-filters {
+    margin-bottom: 20px;
+  }
+}
+
+.orders-filter {
+  width: auto;
+  padding: 0 20px;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d6dadd;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #1d233d;
+  transition: all 0.3s ease-in-out;
+}
+.orders-filter .mark {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #b8bec3;
+  background-color: #fff;
+  padding: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.orders-filter .mark:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.orders-filter.active {
+  border-color: #154baf;
+  color: #154baf;
+}
+.orders-filter.active .mark {
+  border-color: #154baf;
+}
+.orders-filter.active .mark::after {
+  background-color: #154baf;
+}
+
+.orders-list .list-head {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 1fr 2fr 1fr 1fr 3fr;
+  gap: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #1d233d;
+}
+@media (max-width: 991px) {
+  .orders-list .list-head {
+    display: none;
+  }
+}
+.orders-list .order-num {
+  text-align: start;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+@media (max-width: 991px) {
+  .orders-list .order-num {
+    padding: 0;
+  }
+}
+.orders-list .status {
+  text-align: start;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+@media (max-width: 991px) {
+  .orders-list .status {
+    padding: 0;
+  }
+}
+.orders-list .order-item {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 1fr 2fr 1fr 1fr 3fr;
+  gap: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #1d233d;
+}
+@media (max-width: 991px) {
+  .orders-list .order-item {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .orders-list .order-item div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    padding: 0 20px;
+  }
+  .orders-list .order-item div:last-of-type {
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #dedede;
+  }
+}
+.orders-list .order-item .col-title {
+  display: none;
+}
+@media (max-width: 991px) {
+  .orders-list .order-item .col-title {
+    display: block;
+  }
+}
+.orders-list .order-item:nth-of-type(even) {
+  background-color: #f1f5f9;
+}
+@media (max-width: 991px) {
+  .orders-list .order-item:nth-of-type(even) {
+    background-color: #fff;
+  }
+}
+@media (max-width: 991px) {
+  .orders-list .order-item {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 20px;
+  }
+}
+.orders-list .order-item[data-filter=waiting] .status .col-val {
+  color: #8a8a8a;
+  fill: #8a8a8a;
+}
+.orders-list .order-item[data-filter=runing] .status .col-val {
+  color: #1449af;
+  fill: #1449af;
+}
+.orders-list .order-item[data-filter=complete] .status .col-val {
+  color: #4caf50;
+  fill: #4caf50;
+}
+.orders-list .order-item[data-filter=processing] .status .col-val {
+  color: #ffc933;
+  fill: #ffc933;
+}
+.orders-list .order-item[data-filter=canceled] .status .col-val {
+  color: #ec453d;
+  fill: #ec453d;
 }
 
 .mobile-tools {
