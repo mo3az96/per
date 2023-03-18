@@ -13,13 +13,18 @@ $(document).ready(function () {
   /************************************ Menu ************************************/
 
   $(".menu-btn").click(function () {
+    if ($(".dashboard-side").length > 0) {
+      $(".dashboard-side").addClass("active");
+    } else {
+      $(".header-tools").addClass("active");
+    }
     $(".overlay").fadeIn(500);
-    $(".header-tools").addClass("active");
     $("body").addClass("overflow");
   });
   $(".close-btn,.overlay").click(function () {
     $(".overlay").fadeOut(500);
     $(".header-tools").removeClass("active");
+    $(".dashboard-side").removeClass("active");
     $("body").removeClass("overflow");
   });
   /************************************ Offers Slider ************************************/
