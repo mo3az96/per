@@ -22,16 +22,6 @@ html {
   scrollbar-color: #ffaa00 #fff;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 .overflow {
   overflow: hidden !important;
 }
@@ -2938,6 +2928,221 @@ header:after {
   margin: 0;
 }
 .support-instructions-body .instructions-item:nth-of-type(odd) {
+  background-color: #f1f5f9;
+}
+
+.single-services-title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  color: #1d233d;
+  margin: 50px 0 30px;
+}
+@media (max-width: 991px) {
+  .single-services-title {
+    margin: 30px 0 20px;
+    font-size: 30px;
+  }
+}
+
+.single-sec {
+  padding: 40px 0 30px;
+  background-color: #f1f5f9;
+}
+@media (max-width: 991px) {
+  .single-sec {
+    padding-top: 20px;
+  }
+}
+
+.single-feat-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 14px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  background-color: #fff;
+}
+.single-feat-item ~ .single-feat-item {
+  margin-top: 20px;
+}
+.single-feat-item .feat-img {
+  width: 62px;
+}
+.single-feat-item .feat-name {
+  font-size: 20px;
+  font: 700px;
+  margin: 0;
+  color: #1d233d;
+  -webkit-margin-start: 9px;
+          margin-inline-start: 9px;
+}
+
+.single-main-info {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .single-main-info {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.single-main-img {
+  width: 284px;
+  height: 275px;
+  max-width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .single-main-img {
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.single-main-img.tiktok-img {
+  background-color: #000000;
+}
+.single-main-img.youtube-img {
+  background-color: #ff0000;
+}
+.single-main-img.facebook-img {
+  background-color: #3b5998;
+}
+.single-main-img.instagram-img {
+  background: transparent linear-gradient(287deg, #fec053 0%, #f2203e 33%, #b729a8 65%, #5342d6 100%) 0% 0% no-repeat padding-box;
+}
+
+.single-main-text {
+  width: 100%;
+}
+.single-main-text .custom-input {
+  height: 48px;
+}
+
+.single-main-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 17px;
+  color: #1d233d;
+}
+
+.qty-block {
+  padding: 10px 10px 15px;
+  background-color: #f9fafc;
+  border: 1px solid #d6dadd;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.qty-block .qty-from {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.qty-block .qty-from label {
+  font-size: 18px;
+  color: #1d233d;
+  margin: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.qty-block .qty-input {
+  background-color: #ffffff;
+  border: 1px solid #d6dadd;
+  border-radius: 10px;
+  width: 75px;
+  height: 40px;
+  -webkit-padding-start: 16px;
+          padding-inline-start: 16px;
+  font-size: 16px;
+  color: #6e6e6e;
+}
+.qty-block .order-qty-cont {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.qty-block .order-qty {
+  font-size: 14px;
+  color: #8e93aa;
+}
+.qty-block .order-qty strong {
+  font-size: 16px;
+  color: #1d233d;
+}
+
+.single-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.single-price {
+  width: 191px;
+  height: 45px;
+  border: 1px solid #d6dadd;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 18px;
+  pointer-events: none;
+}
+.single-price strong {
+  color: #ffaa00;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.single-price strong img {
+  width: 28px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+
+.single-buy {
+  width: 191px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.single-instructions {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.single-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.single-instructions-body .instructions-item {
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 16px;
+  color: #1d233d;
+  margin: 0;
+}
+.single-instructions-body .instructions-item:nth-of-type(odd) {
   background-color: #f1f5f9;
 }
 
