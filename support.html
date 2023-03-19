@@ -494,7 +494,180 @@
           <div class="col-lg-9">
             <div class="dashboard-body">
               <div class="support-cont">
-                
+                <ul class="nav nav-tabs support-list" id="supportTab">
+                  <li class="nav-item">
+                    <button
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#add-ticket"
+                    >
+                      إنشاء تذكرة
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tickets-history"
+                    >
+                      سجل التذاكر
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content support-tabs" id="supportTabContent">
+                  <div class="tab-pane fade show active" id="add-ticket">
+                    <div class="add-ticket">
+                      <form class="ticket-form">
+                        <div class="form-group">
+                          <div class="radios">
+                            <label class="radio">
+                              <input type="radio" name="type" />
+                              <div class="radio-btn">
+                                <span class="mark"></span>
+                                الطلبات
+                              </div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type" />
+                              <div class="radio-btn">
+                                <span class="mark"></span>
+                                المدفوعات
+                              </div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="type" />
+                              <div class="radio-btn">
+                                <span class="mark"></span>
+                                آخر
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <select class="custom-input">
+                            <option value="1">تعويض</option>
+                            <option value="1">تعويض</option>
+                            <option value="1">تعويض</option>
+                            <option value="1">تعويض</option>
+                            <option value="1">تعويض</option>
+                            <option value="1">تعويض</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label> رقم الطلب </label>
+                          <input type="text" class="custom-input" />
+                        </div>
+                        <div class="form-group">
+                          <label> الرسالة </label>
+                          <textarea
+                            class="custom-input"
+                            placeholder="اكتب رسالتك هنا"
+                          ></textarea>
+                        </div>
+                        <button class="ticket-btn main-btn">
+                          إرسال التذكرة
+                        </button>
+                      </form>
+                      <div class="ticket-img">
+                        <img src="images/support.png" class="img-fluid" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tickets-history">
+                    <div class="history-table">
+                      <div class="table-head">
+                        <div class="table-method">نوع التذكره</div>
+                        <div class="table-status">حالة التذكره</div>
+                        <div class="table-date">تاريخ التذكره</div>
+                      </div>
+                      <div class="table-body">
+                        <div class="table-item">
+                          <div class="table-method">
+                            <span>تعويض</span>
+                          </div>
+                          <div class="table-status success">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20.258"
+                              height="20.258"
+                              viewBox="0 0 20.258 20.258"
+                            >
+                              <path
+                                id="Path_36639"
+                                data-name="Path 36639"
+                                d="M18.227,12.2a.723.723,0,1,0-1.089-.953L12.515,16.53l-2.357-1.768a.724.724,0,1,0-.868,1.158l2.894,2.171a.723.723,0,0,0,.979-.1Z"
+                                transform="translate(-3.935 -4.488)"
+                              />
+                              <path
+                                id="Path_36640"
+                                data-name="Path 36640"
+                                d="M12.129,2A10.129,10.129,0,1,0,22.258,12.129,10.129,10.129,0,0,0,12.129,2ZM3.447,12.129a8.682,8.682,0,1,1,8.682,8.682A8.682,8.682,0,0,1,3.447,12.129Z"
+                                transform="translate(-2 -2)"
+                                fill-rule="evenodd"
+                              />
+                            </svg>
+                            تم الرد
+                          </div>
+                          <div class="table-date">2023/03/11</div>
+                        </div>
+                        <div class="table-item">
+                          <div class="table-method">
+                            <span>تعويض</span>
+                          </div>
+                          <div class="table-status faild">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20.461"
+                              height="20.461"
+                              viewBox="0 0 20.461 20.461"
+                            >
+                              <path
+                                id="Path_36641"
+                                data-name="Path 36641"
+                                d="M12.386,12.214a.731.731,0,0,1,1.033,0l1.55,1.55,1.55-1.55a.731.731,0,1,1,1.033,1.033L16,14.8l1.55,1.55a.731.731,0,0,1-1.033,1.034l-1.55-1.55-1.55,1.55a.731.731,0,1,1-1.033-1.033l1.55-1.55-1.55-1.55A.731.731,0,0,1,12.386,12.214Z"
+                                transform="translate(-4.739 -4.692)"
+                              />
+                              <path
+                                id="Path_36642"
+                                data-name="Path 36642"
+                                d="M2,12.231A10.231,10.231,0,1,1,12.231,22.461,10.231,10.231,0,0,1,2,12.231ZM12.231,3.462A8.769,8.769,0,1,0,21,12.231,8.769,8.769,0,0,0,12.231,3.462Z"
+                                transform="translate(-2 -2)"
+                                fill-rule="evenodd"
+                              />
+                            </svg>
+                            فى انتظار الرد
+                          </div>
+                          <div class="table-date">2023/03/11</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="support-instructions">
+                <h4 class="support-title">تعليمات دعم العملاء</h4>
+                <div class="support-instructions-body">
+                  <p class="instructions-item">
+                    هنا تفاصيل المهمة هذا النص يمكن ان يستبدل بنص اخر في نفس
+                    المساحة والوصف
+                  </p>
+                  <p class="instructions-item">
+                    هنا تفاصيل المهمة هذا النص يمكن ان يستبدل بنص اخر في نفس
+                    المساحة والوصف
+                  </p>
+                  <p class="instructions-item">
+                    هنا تفاصيل المهمة هذا النص يمكن ان يستبدل بنص اخر في نفس
+                    المساحة والوصف
+                  </p>
+                  <p class="instructions-item">
+                    هنا تفاصيل المهمة هذا النص يمكن ان يستبدل بنص اخر في نفس
+                    المساحة والوصف
+                  </p>
+                  <p class="instructions-item">
+                    هنا تفاصيل المهمة هذا النص يمكن ان يستبدل بنص اخر في نفس
+                    المساحة والوصف
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -594,4 +767,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
- 
