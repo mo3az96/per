@@ -1133,6 +1133,21 @@ textarea.custom-input {
   height: 120px;
 }
 
+select.custom-input {
+  background-image: url(../images/select.svg);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+html[dir=rtl] select.custom-input {
+  background-position: left 13px top 50%;
+}
+html[dir=ltr] select.custom-input {
+  background-position: right 13px top 50%;
+}
+
 .input-ico {
   position: absolute;
   width: 30px;
@@ -2702,13 +2717,33 @@ header:after {
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
 }
+@media (max-width: 991px) {
+  .information-sec .table-method {
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+}
 .information-sec .table-status {
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
 }
+@media (max-width: 991px) {
+  .information-sec .table-status {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+}
 .information-sec .table-date {
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
+}
+@media (max-width: 991px) {
+  .information-sec .table-date {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-padding-end: 10px;
+            padding-inline-end: 10px;
+  }
 }
 .information-sec .table-item {
   display: grid;
@@ -2867,13 +2902,30 @@ header:after {
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 991px) {
+  .history-table .table-head {
+    font-size: 14px;
+    height: 55px;
+  }
+}
 .history-table .table-method {
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
 }
+@media (max-width: 991px) {
+  .history-table .table-method {
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+}
 .history-table .table-status {
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
+}
+@media (max-width: 991px) {
+  .history-table .table-status {
+    padding: 0 5px;
+  }
 }
 .history-table .table-date {
   -webkit-padding-start: 15px;
@@ -2882,6 +2934,8 @@ header:after {
 @media (max-width: 991px) {
   .history-table .table-date {
     padding: 0;
+    -webkit-padding-end: 10px;
+            padding-inline-end: 10px;
   }
 }
 .history-table .table-item {
@@ -2893,6 +2947,12 @@ header:after {
   align-items: center;
   font-size: 18px;
   font-weight: 400;
+}
+@media (max-width: 991px) {
+  .history-table .table-item {
+    font-size: 14px;
+    height: 55px;
+  }
 }
 .history-table .table-item:nth-of-type(even) {
   background-color: #f1f5f9;
