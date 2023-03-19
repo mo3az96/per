@@ -1353,6 +1353,10 @@ html[dir=ltr] .country-key ~ .custom-input {
   justify-content: flex-start;
 }
 
+footer {
+  position: relative;
+  z-index: 3;
+}
 footer .curve {
   transform: scaleY(-1) translateY(-2px);
 }
@@ -1859,12 +1863,10 @@ header:after {
   }
 }
 
-.dashboard-sec {
-  overflow: hidden;
-}
-
 .dashboard-side {
-  position: relative;
+  position: sticky;
+  top: 0;
+  inset-inline-start: 0;
 }
 .dashboard-side .close-btn {
   display: none;
