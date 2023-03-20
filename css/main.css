@@ -2619,7 +2619,6 @@ header:after {
           margin-inline-start: auto;
   font-size: 16px;
   font-weight: 500;
-  margin-top: -15px;
 }
 
 .charge-methods {
@@ -2817,6 +2816,7 @@ header:after {
   .information-sec .table-method {
     -webkit-padding-start: 10px;
             padding-inline-start: 10px;
+    white-space: nowrap;
   }
 }
 .information-sec .table-status {
@@ -2850,6 +2850,11 @@ header:after {
   align-items: center;
   font-size: 18px;
   font-weight: 400;
+}
+@media (max-width: 991px) {
+  .information-sec .table-item {
+    grid-template-columns: 2fr 3fr 3fr;
+  }
 }
 .information-sec .table-item .table-method {
   display: flex;
