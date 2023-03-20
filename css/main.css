@@ -44,6 +44,14 @@ html {
   }
 }
 
+img {
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
 @font-face {
   font-family: "din";
   src: url("../fonts/DinNext/DINNextLTW23-Regular.woff2") format("woff2"), url("../fonts/DinNext/DINNextLTW23-Regular.woff") format("woff"), url("../fonts/DinNext/DINNextLTW23-Regular.ttf") format("truetype");
@@ -127,6 +135,16 @@ main .curve img {
 @media (max-width: 991px) {
   .main-title {
     text-align: center;
+  }
+}
+
+.main-img {
+  width: 438px;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .main-img {
+    margin: auto;
   }
 }
 
@@ -438,28 +456,28 @@ main .curve img {
 }
 .custom-slider .swiper-btn.swiper-button-next {
   right: auto;
-  left: -50px;
+  left: -65px;
 }
 .custom-slider .swiper-btn.swiper-button-next .active {
   transform: scaleX(-1);
 }
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-prev {
   right: auto;
-  left: -50px;
+  left: -65px;
 }
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-prev .active {
   transform: scaleX(-1);
 }
 .custom-slider .swiper-btn.swiper-button-prev {
   left: auto;
-  right: -50px;
+  right: -65px;
 }
 .custom-slider .swiper-btn.swiper-button-prev img:not(.active) {
   transform: scaleX(-1);
 }
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-next {
   left: auto;
-  right: -50px;
+  right: -65px;
 }
 .swiper-rtl .custom-slider .swiper-btn.swiper-button-next img:not(.active) {
   transform: scaleX(-1);
@@ -943,12 +961,12 @@ main .curve img {
   align-items: center;
   margin-bottom: 4px;
 }
+.state-item .state-icon img {
+  max-height: 100%;
+}
 @media (max-width: 767px) {
   .state-item .state-icon {
     height: 90px;
-  }
-  .state-item .state-icon img {
-    max-height: 100%;
   }
 }
 .state-item .state-num {
