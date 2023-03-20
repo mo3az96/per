@@ -2100,15 +2100,28 @@ header:after {
 @media (max-width: 991px) {
   .dashboard-states-item {
     padding: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .dashboard-states-item .item-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .dashboard-states-item .item-content .item-body {
+    max-width: 100%;
   }
 }
 .dashboard-states-item .item-head {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  .dashboard-states-item .item-head {
+    align-items: center;
+  }
 }
 .dashboard-states-item .item-img {
   width: 73px;
@@ -2128,15 +2141,28 @@ header:after {
   font-size: 20px;
   color: #9ca0b1;
 }
+@media (max-width: 767px) {
+  .dashboard-states-item .item-text {
+    padding: 0;
+  }
+}
 .dashboard-states-item .item-title {
   font-size: 20px;
   font-weight: 400;
   color: #1d233d;
+  margin: 0;
 }
 .dashboard-states-item .progress-cont {
   margin-top: 14px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .dashboard-states-item .progress-cont {
+    width: 300px;
+    max-width: 100%;
+    margin: auto;
+  }
 }
 .dashboard-states-item .progress {
   width: 100%;
@@ -2183,6 +2209,9 @@ header:after {
     left: auto;
     transform: perspective(1px);
     width: 110px;
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+    margin-top: 10px;
   }
 }
 
