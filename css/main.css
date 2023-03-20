@@ -2124,17 +2124,8 @@ header:after {
 @media (max-width: 991px) {
   .dashboard-states-item {
     padding: 20px;
-  }
-}
-@media (max-width: 991px) {
-  .dashboard-states-item .item-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .dashboard-states-item .item-content .item-body {
-    max-width: 100%;
   }
 }
 .dashboard-states-item .item-head {
@@ -2176,17 +2167,15 @@ header:after {
   color: #1d233d;
   margin: 0;
 }
+@media (max-width: 991px) {
+  .dashboard-states-item .item-title {
+    font-size: 18px;
+  }
+}
 .dashboard-states-item .progress-cont {
   margin-top: 14px;
   display: flex;
   align-items: center;
-}
-@media (max-width: 767px) {
-  .dashboard-states-item .progress-cont {
-    width: 300px;
-    max-width: 100%;
-    margin: auto;
-  }
 }
 .dashboard-states-item .progress {
   width: 100%;
@@ -2214,7 +2203,14 @@ header:after {
   font-size: 28px;
   font-weight: 700;
   color: #1d233d;
-  direction: ltr;
+}
+@media (max-width: 991px) {
+  .dashboard-states-item .item-value {
+    font-size: 26px;
+    justify-content: flex-start;
+    -webkit-padding-start: 87px;
+            padding-inline-start: 87px;
+  }
 }
 .dashboard-states-item .item-link {
   position: absolute;
