@@ -2679,6 +2679,7 @@ header:after {
 .instructions-info img {
   -webkit-margin-end: 16px;
           margin-inline-end: 16px;
+  width: 42px;
 }
 
 .instructions-form .form-title {
