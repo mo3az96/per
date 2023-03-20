@@ -1255,7 +1255,8 @@ html[dir=ltr] .country-key ~ .custom-input {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 48px;
+  min-height: 48px;
+  padding: 11px 5px;
   border: 1px solid #154baf;
   border-radius: 15px;
   font-size: 16px;
@@ -1272,6 +1273,19 @@ html[dir=ltr] .country-key ~ .custom-input {
 }
 .form-hint a:hover {
   color: #ffaa00;
+}
+@media (max-width: 767px) {
+  .form-hint {
+    gap: 10px;
+  }
+  .form-hint a {
+    margin: 0;
+  }
+}
+html[dir=ltr] .form-hint {
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
 }
 
 .cancel-btn {
@@ -1342,6 +1356,7 @@ html[dir=ltr] .country-key ~ .custom-input {
 .condition label .mark {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
   cursor: pointer;
   background-color: #fff;
   border: 2px solid #d8d8d8;
@@ -1369,6 +1384,7 @@ html[dir=ltr] .country-key ~ .custom-input {
   font-size: 14px;
   font-weight: 400;
   color: #1d233d;
+  text-align: start;
   -webkit-margin-start: 9px;
           margin-inline-start: 9px;
 }
@@ -1380,6 +1396,11 @@ html[dir=ltr] .country-key ~ .custom-input {
 .condition .text a:hover {
   text-decoration: none;
   color: #ffaa00;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .condition .text a {
+    display: block;
+  }
 }
 
 .captcha {
