@@ -1771,7 +1771,6 @@ header:after {
 .header-btn.balance-btn .btn-value img {
   -webkit-margin-start: 9px;
           margin-inline-start: 9px;
-  width: 28px;
 }
 @media (max-width: 767px) {
   .header-btn.balance-btn .btn-value img {
