@@ -2269,7 +2269,7 @@ header:after {
     min-width: 110px;
   }
   html[dir=ltr] .dashboard-states-item .item-link {
-    padding: 0 10px;
+    padding: 0 8px;
   }
 }
 
