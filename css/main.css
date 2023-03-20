@@ -2592,6 +2592,12 @@ header:after {
   justify-content: center;
   flex-shrink: 0;
 }
+@media (max-width: 767px) {
+  .balance-state .state-img {
+    height: 90px;
+    width: 90px;
+  }
+}
 .balance-state .state-text {
   -webkit-margin-start: 17px;
           margin-inline-start: 17px;
@@ -2619,6 +2625,7 @@ header:after {
           margin-inline-start: auto;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 5px;
 }
 
 .charge-methods {
