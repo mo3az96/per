@@ -455,32 +455,32 @@ main .curve img {
   visibility: visible;
   opacity: 1;
 }
-.custom-slider .swiper-btn.swiper-button-next {
+html[dir=rtl] .custom-slider .swiper-btn.swiper-button-next {
   right: auto;
   left: -65px;
 }
-.custom-slider .swiper-btn.swiper-button-next .active {
+html[dir=rtl] .custom-slider .swiper-btn.swiper-button-next .active {
   transform: scaleX(-1);
 }
-.swiper-rtl .custom-slider .swiper-btn.swiper-button-prev {
+html[dir=ltr] .custom-slider .swiper-btn.swiper-button-next {
+  left: auto;
+  right: -65px;
+}
+html[dir=ltr] .custom-slider .swiper-btn.swiper-button-next img:not(.active) {
+  transform: scaleX(-1);
+}
+html[dir=rtl] .custom-slider .swiper-btn.swiper-button-prev {
+  left: auto;
+  right: -65px;
+}
+html[dir=rtl] .custom-slider .swiper-btn.swiper-button-prev img:not(.active) {
+  transform: scaleX(-1);
+}
+html[dir=ltr] .custom-slider .swiper-btn.swiper-button-prev {
   right: auto;
   left: -65px;
 }
-.swiper-rtl .custom-slider .swiper-btn.swiper-button-prev .active {
-  transform: scaleX(-1);
-}
-.custom-slider .swiper-btn.swiper-button-prev {
-  left: auto;
-  right: -65px;
-}
-.custom-slider .swiper-btn.swiper-button-prev img:not(.active) {
-  transform: scaleX(-1);
-}
-.swiper-rtl .custom-slider .swiper-btn.swiper-button-next {
-  left: auto;
-  right: -65px;
-}
-.swiper-rtl .custom-slider .swiper-btn.swiper-button-next img:not(.active) {
+html[dir=ltr] .custom-slider .swiper-btn.swiper-button-prev .active {
   transform: scaleX(-1);
 }
 @media (max-width: 1300px) {
@@ -528,21 +528,21 @@ main .curve img {
 .dashboard-services .custom-slider.service-slider .swiper-btn {
   top: 58px;
 }
-.custom-slider.service-slider .swiper-btn.swiper-button-next {
+html[dir=rtl] .custom-slider.service-slider .swiper-btn.swiper-button-next {
   right: auto;
   left: 0;
 }
-.swiper-rtl .custom-slider.service-slider .swiper-btn.swiper-button-prev {
+html[dir=ltr] .custom-slider.service-slider .swiper-btn.swiper-button-next {
+  left: auto;
+  right: 0;
+}
+html[dir=rtl] .custom-slider.service-slider .swiper-btn.swiper-button-prev {
+  left: auto;
+  right: 0;
+}
+html[dir=ltr] .custom-slider.service-slider .swiper-btn.swiper-button-prev {
   right: auto;
   left: 0;
-}
-.custom-slider.service-slider .swiper-btn.swiper-button-prev {
-  left: auto;
-  right: 0;
-}
-.swiper-rtl .custom-slider.service-slider .swiper-btn.swiper-button-next {
-  left: auto;
-  right: 0;
 }
 .custom-slider.payments-slider .swiper-btn {
   transform: none;
@@ -2263,10 +2263,13 @@ header:after {
     bottom: auto;
     left: auto;
     transform: perspective(1px);
-    width: 110px;
     -webkit-margin-start: auto;
             margin-inline-start: auto;
     margin-top: 10px;
+    min-width: 110px;
+  }
+  html[dir=ltr] .dashboard-states-item .item-link {
+    padding: 0 10px;
   }
 }
 
