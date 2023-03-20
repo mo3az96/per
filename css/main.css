@@ -2982,7 +2982,7 @@ header:after {
 }
 
 .ticket-btn {
-  width: 119px;
+  min-width: 119px;
   height: 46px;
   font-size: 16px;
   font-weight: 500;
