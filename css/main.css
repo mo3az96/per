@@ -1903,6 +1903,7 @@ header:after {
 }
 
 .log-img {
+  width: 354px;
   max-width: 50%;
 }
 @media (max-width: 767px) {
