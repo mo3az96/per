@@ -1906,6 +1906,9 @@ header:after {
   width: 354px;
   max-width: 50%;
 }
+.reg-cont .log-img {
+  width: 471px;
+}
 @media (max-width: 767px) {
   .log-img {
     max-width: none;
@@ -1932,6 +1935,7 @@ header:after {
 .otp-img {
   margin: auto;
   text-align: center;
+  width: 174px;
 }
 
 .reg-cont {

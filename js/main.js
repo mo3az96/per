@@ -2,9 +2,11 @@ $(document).ready(function () {
   sal({
     once: true,
   });
-  if ($("#scene").length > 0) {
-    var scene = $("#scene").get(0);
-    var parallaxInstance = new Parallax(scene);
+  if ($(window).width() >= 991) {
+    if ($("#scene").length > 0) {
+      var scene = $("#scene").get(0);
+      var parallaxInstance = new Parallax(scene);
+    }
   }
   /************************************ Search ************************************/
   $(".search-icon").click(function () {
