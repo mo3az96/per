@@ -3014,6 +3014,7 @@ header:after {
   .history-table .table-head {
     font-size: 14px;
     height: 55px;
+    text-align: center;
   }
 }
 .history-table .table-method {
@@ -3031,8 +3032,11 @@ header:after {
           padding-inline-start: 15px;
 }
 @media (max-width: 991px) {
-  .history-table .table-status {
+  html[dir=rtl] .history-table .table-status {
     padding: 0 5px;
+  }
+  html[dir=ltr] .history-table .table-status {
+    padding: 0 15px;
   }
 }
 .history-table .table-date {
