@@ -117,7 +117,6 @@ main .curve img {
 }
 
 .main-title {
-  font-size: 46px;
   font-weight: 700;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   color: #f4f6f8;
@@ -127,9 +126,18 @@ main .curve img {
 .main-title span {
   color: #ffaa00;
 }
+html[dir=rtl] .main-title {
+  font-size: 50px;
+}
+html[dir=ltr] .main-title {
+  font-size: 46px;
+}
 @media (max-width: 1199px) {
-  .main-title {
+  html[dir=rtl] .main-title {
     font-size: 40px;
+  }
+  html[dir=ltr] .main-title {
+    font-size: 36px;
   }
 }
 @media (max-width: 991px) {
@@ -139,7 +147,7 @@ main .curve img {
 }
 
 .main-img {
-  width: 500px;
+  width: 525px;
   max-width: 100%;
   flex-shrink: 0;
 }
