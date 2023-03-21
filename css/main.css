@@ -112,7 +112,7 @@ main .curve img {
 @media (max-width: 991px) {
   .main {
     flex-direction: column;
-    padding-top: 152px;
+    padding-top: 100px;
   }
 }
 
@@ -153,7 +153,7 @@ html[dir=ltr] .main-title {
 }
 @media (max-width: 991px) {
   .main-img {
-    margin: auto;
+    margin: -30px auto 0;
   }
 }
 
