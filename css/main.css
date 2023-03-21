@@ -2141,8 +2141,8 @@ header:after {
 }
 @media (max-width: 991px) {
   .dashboard-states {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
     margin-bottom: 30px;
   }
 }
@@ -2153,13 +2153,6 @@ header:after {
   border-radius: 20px;
   position: relative;
   padding: 20px 20px 60px;
-}
-@media (max-width: 991px) {
-  .dashboard-states-item {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-  }
 }
 .dashboard-states-item .item-head {
   display: flex;
@@ -2177,6 +2170,12 @@ header:after {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .dashboard-states-item .item-img {
+    width: 65px;
+    height: 65px;
+  }
 }
 .dashboard-states-item .item-text {
   -webkit-margin-start: 14px;
@@ -2239,10 +2238,7 @@ header:after {
 }
 @media (max-width: 991px) {
   .dashboard-states-item .item-value {
-    font-size: 26px;
-    justify-content: flex-start;
-    -webkit-padding-start: 87px;
-            padding-inline-start: 87px;
+    font-size: 20px;
   }
 }
 .dashboard-states-item .item-link {
@@ -2270,6 +2266,53 @@ header:after {
   }
   html[dir=ltr] .dashboard-states-item .item-link {
     padding: 0 8px;
+  }
+}
+@media (max-width: 991px) {
+  .dashboard-states-item {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) {
+    position: relative;
+    padding: 95px 0 15px;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-text {
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-value {
+    padding: 0;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-title {
+    font-size: 16px;
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
+  }
+  .dashboard-states-item:nth-of-type(n + 2) .item-link {
+    min-width: 119px;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+  }
+  .dashboard-states-item:first-of-type {
+    grid-column: 1/span 2;
+    padding: 18px;
+    display: flex;
+    align-items: center;
   }
 }
 
