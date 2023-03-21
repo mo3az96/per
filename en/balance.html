@@ -43,7 +43,11 @@
               </div>
               <div class="search-cont">
                 <div class="search-form">
-                  <input type="text" class="search-input" placeholder="Search" />
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search"
+                  />
                   <button class="search-btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -528,64 +532,71 @@
                     </a>
                   </div>
                 </div>
-                <div class="charge-methods">
-                  <h4 class="balance-title">Shipping Methods</h4>
-                  <div class="charge-items">
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/01.png" class="img-flui" />
-                      <h6 class="charge-title">STC Pay</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/02.png" class="img-flui" />
-                      <h6 class="charge-title">Visa</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/03.png" class="img-flui" />
-                      <h6 class="charge-title">Payoneer</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/04.png" class="img-flui" />
-                      <h6 class="charge-title">Payoneer</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/01.png" class="img-flui" />
-                      <h6 class="charge-title">STC Pay</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/02.png" class="img-flui" />
-                      <h6 class="charge-title">Visa</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/03.png" class="img-flui" />
-                      <h6 class="charge-title">Payoneer</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="../images/charge/04.png" class="img-flui" />
-                      <h6 class="charge-title">Payoneer</h6>
-                    </a>
-                  </div>
+                <div class="charge-methods" id="charge">
+                  <h4 class="balance-title">Charge Methods</h4>
+                  <form action="" class="charge-form">
+                    <div class="charge-items">
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont stc">
+                          <span class="mark"></span>
+                          <img src="../images/charge/01.png" class="img-fluid" />
+                          <h6 class="charge-title">STC Pay</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont visa">
+                          <span class="mark"></span>
+                          <img src="../images/charge/02.png" class="img-fluid" />
+                          <h6 class="charge-title">Visa</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont payoneer">
+                          <span class="mark"></span>
+                          <img src="../images/charge/03.png" class="img-fluid" />
+                          <h6 class="charge-title">Payoneer</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont apple">
+                          <span class="mark"></span>
+                          <img src="../images/charge/04.png" class="img-fluid" />
+                          <h6 class="charge-title">Apple Pay</h6>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="charge-instructions">
+                      <h4 class="balance-title">Directions</h4>
+                      <p class="instructions-info">
+                        <img src="../images/info-chat.png" />
+                        A 5% bonus is automatically added to the balance when
+                        recharging more than $50 or more. The amount to be
+                        recharged (dollars)
+                      </p>
+                      <div class="instructions-form">
+                        <h6 class="form-title">
+                          Shipping Amount
+                          <span> (American Dollar) </span>
+                        </h6>
+                        <div class="instructions-form-cont">
+                          <input
+                            type="text"
+                            class="instructions-input"
+                            placeholder="Enter the amount"
+                          />
+                          <button class="instructions-btn main-btn">
+                            Recharge
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="instructions-sec" id="charge">
-                  <h4 class="balance-title">Directions</h4>
-                  <p class="instructions-info">
-                    <img src="../images/info-chat.png" />
-                    A 5% bonus is automatically added to the balance when recharging more than $50 or more. The amount to be recharged (dollars)
-                  </p>
-                  <div class="instructions-form">
-                    <h6 class="form-title">
-                      Shipping Amount
-                      <span> (American Dollar) </span>
-                    </h6>
-                    <form>
-                      <input
-                        type="text"
-                        class="instructions-input"
-                        placeholder="Enter the amount"
-                      />
-                      <button class="instructions-btn main-btn">Recharge</button>
-                    </form>
-                  </div>
-                </div>
+
                 <div class="information-sec">
                   <h4 class="balance-title">Financial transactions</h4>
                   <div class="info-table">

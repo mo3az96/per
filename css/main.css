@@ -2703,38 +2703,95 @@ header:after {
 }
 
 .charge-item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.charge-item .mark {
+  position: absolute;
+  top: 15px;
+  inset-inline-start: 15px;
+  z-index: 3;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #b8bec3;
+  background-color: #fff;
+  padding: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.charge-item .mark:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.charge-item .info-cont {
   border-radius: 15px;
   max-width: 100%;
   position: relative;
   text-decoration: none;
   overflow: hidden;
+  border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 991px) {
-  .charge-item:nth-of-type(n + 5) {
-    display: none;
-  }
-}
-.charge-item img {
+.charge-item .info-cont img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.charge-item .charge-title {
+.charge-item .info-cont .charge-title {
   position: absolute;
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 25px;
+  bottom: 15px;
   font-size: 16px;
   font-weight: 500;
   color: #1d233d;
 }
-.charge-item:hover {
-  text-decoration: none;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1607843137);
+.charge-item .info-cont.stc {
+  background-color: #ebfcf7;
+}
+.charge-item .info-cont.visa {
+  background-color: #ebf0fc;
+}
+.charge-item .info-cont.payoneer {
+  background-color: #fcebeb;
+}
+.charge-item .info-cont.apple {
+  background-color: #f2f2f2;
+}
+.charge-item input {
+  display: none;
+}
+.charge-item input:checked ~ .info-cont {
+  background-color: #fff;
+  border-color: #154baf;
+  box-shadow: 2px 10px 16px rgba(19, 73, 175, 0.3764705882);
   transform: translateY(-5px);
+}
+.charge-item input:checked ~ .info-cont .mark {
+  border-color: #154baf;
+}
+.charge-item input:checked ~ .info-cont .mark::after {
+  background-color: #154baf;
+}
+
+.charge-instructions {
+  padding-top: 16px;
+}
+.charge-instructions .balance-title {
+  text-align: start;
 }
 
 .instructions-sec {
@@ -2775,12 +2832,12 @@ header:after {
   color: #a5a9b8;
   font-weight: 400;
 }
-.instructions-form form {
+.instructions-form .instructions-form-cont {
   display: flex;
   align-items: center;
 }
 @media (max-width: 991px) {
-  .instructions-form form {
+  .instructions-form .instructions-form-cont {
     flex-direction: column;
     align-items: flex-end;
   }

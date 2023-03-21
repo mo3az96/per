@@ -521,67 +521,71 @@
                         </p>
                       </div>
                     </div>
-                    <a href="support.html" class="state-link main-btn"> تواصل معنا </a>
+                    <a href="support.html" class="state-link main-btn">
+                      تواصل معنا
+                    </a>
                   </div>
                 </div>
-                <div class="charge-methods">
+                <div class="charge-methods" id="charge">
                   <h4 class="balance-title">طرق الشحن</h4>
-                  <div class="charge-items">
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/01.png" class="img-flui" />
-                      <h6 class="charge-title">اس تي سي</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/02.png" class="img-flui" />
-                      <h6 class="charge-title">فيزا</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/03.png" class="img-flui" />
-                      <h6 class="charge-title">بايونير</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/04.png" class="img-flui" />
-                      <h6 class="charge-title">بايونير</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/01.png" class="img-flui" />
-                      <h6 class="charge-title">اس تي سي</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/02.png" class="img-flui" />
-                      <h6 class="charge-title">فيزا</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/03.png" class="img-flui" />
-                      <h6 class="charge-title">بايونير</h6>
-                    </a>
-                    <a href="#!" class="charge-item">
-                      <img src="images/charge/04.png" class="img-flui" />
-                      <h6 class="charge-title">بايونير</h6>
-                    </a>
-                  </div>
-                </div>
-                <div class="instructions-sec" id="charge">
-                  <h4 class="balance-title">تعليمات</h4>
-                  <p class="instructions-info">
-                    <img src="images/info-chat.png" />
-                    بونص 5% يضاف تلقائيا للرصيد عند شحن أكثر من 50$ أو أكثر
-                    المبلغ المطلوب شحنه (دولار أمريكي)
-                  </p>
-                  <div class="instructions-form">
-                    <h6 class="form-title">
-                      مبلغ الشحن
-                      <span> (دولار أمريكي) </span>
-                    </h6>
-                    <form>
-                      <input
-                        type="text"
-                        class="instructions-input"
-                        placeholder="ادخل المبلغ"
-                      />
-                      <button class="instructions-btn main-btn">شحن</button>
-                    </form>
-                  </div>
+                  <form action="" class="charge-form">
+                    <div class="charge-items">
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont stc">
+                          <span class="mark"></span>
+                          <img src="images/charge/01.png" class="img-fluid" />
+                          <h6 class="charge-title">اس تي سي</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont visa">
+                          <span class="mark"></span>
+                          <img src="images/charge/02.png" class="img-fluid" />
+                          <h6 class="charge-title">فيزا</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont payoneer">
+                          <span class="mark"></span>
+                          <img src="images/charge/03.png" class="img-fluid" />
+                          <h6 class="charge-title">بايونير</h6>
+                        </div>
+                      </label>
+                      <label class="charge-item">
+                        <input type="radio" name="charge-method" />
+                        <div class="info-cont apple">
+                          <span class="mark"></span>
+                          <img src="images/charge/04.png" class="img-fluid" />
+                          <h6 class="charge-title">ابل باي</h6>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="charge-instructions">
+                      <h4 class="balance-title">تعليمات</h4>
+                      <p class="instructions-info">
+                        <img src="images/info-chat.png" />
+                        بونص 5% يضاف تلقائيا للرصيد عند شحن أكثر من 50$ أو أكثر
+                        المبلغ المطلوب شحنه (دولار أمريكي)
+                      </p>
+                      <div class="instructions-form">
+                        <h6 class="form-title">
+                          مبلغ الشحن
+                          <span> (دولار أمريكي) </span>
+                        </h6>
+                        <div class="instructions-form-cont">
+                          <input
+                            type="text"
+                            class="instructions-input"
+                            placeholder="ادخل المبلغ"
+                          />
+                          <button class="instructions-btn main-btn">شحن</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
                 <div class="information-sec">
                   <h4 class="balance-title">المعاملات المالية</h4>
@@ -595,7 +599,10 @@
                       <div class="table-item">
                         <div class="table-method">
                           <div class="method-img">
-                            <img src="images/payment-table/01.png" class="img-fluid" />
+                            <img
+                              src="images/payment-table/01.png"
+                              class="img-fluid"
+                            />
                           </div>
                           <span>فيزا</span>
                         </div>
@@ -627,7 +634,10 @@
                       <div class="table-item">
                         <div class="table-method">
                           <div class="method-img">
-                            <img src="images/payment-table/02.png" class="img-fluid" />
+                            <img
+                              src="images/payment-table/02.png"
+                              class="img-fluid"
+                            />
                           </div>
                           <span>بايونير</span>
                         </div>
@@ -660,7 +670,10 @@
                       <div class="table-item">
                         <div class="table-method">
                           <div class="method-img">
-                            <img src="images/payment-table/03.png" class="img-fluid" />
+                            <img
+                              src="images/payment-table/03.png"
+                              class="img-fluid"
+                            />
                           </div>
                           <span>اس تي سي باي</span>
                         </div>
